@@ -2,7 +2,7 @@
 
 body {
   font-family: "HiraginoSans-W3","游ゴシック Medium","Yu Gothic Medium","游ゴシック体",YuGothic,sans-serif;
-  margin: 0 auto;
+  margin: 0;
 }
 header {
  height: 130px;
@@ -74,33 +74,52 @@ p {
   width: 100%;
 }
 .contents {
-  margin-top: 130px;
+  height: 700px;
   padding: 0 50px;
+  margin-top: 130px;
 }
 .title {
   padding-top: 35px;
   border-bottom: solid 3px black;
 }
-.member {
-  height: 400px;
-  padding-bottom: 40px;
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 90%;
 }
-.member h1 {
-  display: inline-block;
-  padding-bottom: 15px;
+table tr {
+  background-color: #fff;
+  border-bottom: 2px solid #fff;
 }
-.member table {
+table tr:nth-child(even){
+  background-color: #eee;
+}
+table th,
+table td {
+  padding: .35em 1em;
+}
+table thead th {
+    font-size: 15px;
+    padding: 1em;
+}
+table thead tr{
+  background-color: black;
+  color:#fff;
+}
+table tbody th {
   text-align: left;
-  font-size: 25px;
-  width: 55%;
+  font-size: 20px;
 }
-.pic {
-  height: 325px;
-  width: 40%;
-  margin: 35px 0 0 0;
-  float: right;
-  display: inline-block;
+.url{
+   text-align: left;
+   font-size: 20px;
 }
+.member{
+  text-align: right;
+  color: black;
+  font-weight: bold;
+}
+
 footer {
   height: 160px;
   width: 100%;
