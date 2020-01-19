@@ -1,0 +1,129 @@
+<@charset"UTF-8";>
+
+body {
+  font-family: "HiraginoSans-W3","游ゴシック Medium","Yu Gothic Medium","游ゴシック体",YuGothic,sans-serif;
+  margin: 0 auto;
+}
+header {
+ height: 130px;
+ width: 100%;
+ background-color: black;
+ position :fixed;
+ top: 0;
+ z-index: 10;
+}
+h1 {
+  font-size: 35px;
+}
+h2 {
+  font-size: 25px;
+}
+p {
+  font-size: 20px;
+}
+.header-left {
+ float: left;
+ width: 15%;
+ height: 130px;
+ display: inline-block;
+}
+.logo {
+  width: 115px;
+  height: 115px;
+}
+.header-right {
+ height: 130px;
+ width: 17%;
+ float: right;
+ color: #ffd400;
+ padding-right: 10px;
+ display: inline-block;
+}
+.menu{
+  float: left;
+  color: white;
+  list-style: none;
+  margin-top: 80px;
+  width: 60%;
+  display: inline-block;
+
+}
+.menu li {
+  color: white;
+  float: left;
+  margin: 5px 20px;
+  font-size: 20px;
+}
+.menu a{
+  position: relative;
+  display: inline-block;
+  transition: .3s;
+}
+.menu a::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #ffd400;
+  transition: .3s;
+  transform: translateX(-50%);
+}
+.menu a:hover::after{
+  width: 100%;
+}
+.contents {
+  margin-top: 130px;
+  padding: 0 50px;
+}
+.title {
+  padding-top: 35px;
+  border-bottom: solid 3px black;
+}
+.member {
+  height: 400px;
+  padding-bottom: 40px;
+}
+.member h1 {
+  display: inline-block;
+  padding-bottom: 15px;
+}
+.member table {
+  text-align: left;
+  font-size: 25px;
+  width: 55%;
+}
+.pic {
+  height: 325px;
+  width: 40%;
+  margin: 35px 0 0 0;
+  float: right;
+  display: inline-block;
+}
+footer {
+  height: 160px;
+  width: 100%;
+  background-color: black;
+}
+.footer-left {
+  display: inline-block;
+  float: left;
+  height: 115px;
+}
+.footer-right {
+  display: inline-block;
+  color: white;
+  float: right;
+  margin: 10px;
+  opacity: 0.7;
+}
+.f-bottom  {
+  float: left;
+  color: white;
+  opacity: 0.5;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
