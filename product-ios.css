@@ -122,6 +122,7 @@
   .css-br::after {
   content: "\A" ;
   white-space: pre;
+  }
   footer {
     height: 90px;
     width: 100%;
